@@ -1,6 +1,12 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+/*----------------- 
+another font  
+------------------*/
+
+
+
 /* common styles and utilities */
 body
 {
@@ -158,7 +164,42 @@ a{
     justify-content: center;
 }
 
- /*------------------
+/* ----------------
+Ball animation style 
+ ===================*/
+
+ .section-animi
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background: url(stdium.jpg);
+     background-size: cover;
+ }
+ marquee
+ {
+     height: 100vh;
+ }
+ .ball
+ {
+     max-width: 300px;
+     animation: animate 4s linear infinite;
+ }
+ @keyframes animate
+ {
+     0%
+     {
+         transform:rotate(0deg);
+     }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+     
+
+  
+
+/*------------------
      Media Queries -------
       -------------------*/
       /* Mobile Devices */

@@ -1,0 +1,110 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common styles and utilities */
+body
+{
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+/* Top Banner styles */
+.banner-things{
+    background-color: #2D25A0;
+    display: flex;
+    align-items: center;
+   
+}
+.banner-info{
+    float: left;
+    padding-left: 156px;
+    align-items: center;
+    
+}
+.banner-title{
+    font-size: 50px;
+    color: white;
+
+}
+.top-banners
+{
+    margin-left: 102px;
+}
+
+.banner img
+{
+    float: right;
+    width: 338x;
+    height: 428px;
+    margin-top: 1px;
+    padding-right: 140px;
+    align-items: center;
+}
+.live-button
+{
+    width: 168px;
+    height: 44px;
+    font-size: 16px;
+    background-color: #E02C6D;
+    text-align: center;
+    color: white;
+   
+} 
+.live-button a{
+    text-decoration: none;
+    width: 88px;
+    height: 24px;
+    color: white;
+   
+}
+
+/* player styles 
+----------------*/
+
+.player
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 50px;
+}
+
+.player-photo
+{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 456px;
+    margin-top: 70px;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-photo img
+{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+}
+
+.player-title
+{
+    font-size: 28px;
+    width: 300px;
+    color: #18191F;
+    padding-top: 16px;
+    padding-left: 15px;
+}
+
+.player-info .player-details
+{
+    font-size: 16px;
+    padding-left: 15px;
+    color: #6C6C6C;
+}   
+
+
+
+
+
+

@@ -9,19 +9,22 @@ body
 }
 
 /* Top Banner styles */
-.banner-things{
+.banner-things
+{
     background-color: #2D25A0;
     display: flex;
     align-items: center;
    
 }
-.banner-info{
+.banner-info
+{
     float: left;
     padding-left: 156px;
     align-items: center;
     
 }
-.banner-title{
+.banner-title
+{
     font-size: 50px;
     color: white;
 
@@ -48,15 +51,25 @@ body
     background-color: #E02C6D;
     text-align: center;
     color: white;
-   
+    padding-top: 15px;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+
+.live-button:hover 
+{
+    box-shadow: inset 300px 0 0 0#35fa03;
 } 
-.live-button a{
+
+
+.live-button a
+{
     text-decoration: none;
     width: 88px;
     height: 24px;
     color: white;
-   
 }
+
 
 /* player styles 
 ----------------*/
@@ -66,6 +79,7 @@ body
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 50px;
+    grid-row-gap: 15px;
 }
 
 .player-photo
@@ -101,10 +115,76 @@ body
     font-size: 16px;
     padding-left: 15px;
     color: #6C6C6C;
-}   
+    align-items: left;
+} 
 
+---------------------/* 
+Footer styles 
+-------------------*/
+*{
+    margin: 0;
+    padding:0;
+}
+.footer-img
+{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+  
+      
+}
+.social-icons
+{
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    height: 32px;
+    width: 32px;
+    boarder: radius 30px;
+    
+}
+.copyright-text
+{
+    display: flex;
+    align-items: center;
+    ext-align: right;
+    justify-content: center;
+}
 
+ /*------------------
+     Media Queries -------
+      -------------------*/
+      /* Mobile Devices */
+      @media only screen and (max-width:688px)  {
+        .container{
+            width: 100%;
+        }
+       
+        .player{
+          
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .player-photo{
+           flex-direction: column;
+       }
+     
+     }
+       /* tablet devices */
+       @media only screen and (min-width:688px)   and (max-width:992px) {
+           .container{
+               width: 100%;
+           }
+           .player{
+               grid-template-columns: repeat(2, 1fr);
+           }
+           
+       }
 
-
-
-
+   
